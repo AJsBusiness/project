@@ -1,0 +1,20 @@
+{% extends "set.html" %}
+
+{% set active_page = "carYear" %}
+
+{% block title %}carYear{% endblock %}
+
+{% block content %}
+    <h1>Car Year</h1>
+	
+	<h3>Here you can search for a car by the year!</h3>
+	<br><p>Please select a year below</p>
+	<form action="/yearResponse">
+		<select name="year">
+		{{ options }}
+		</select>
+	<br><br>
+		<input type="submit">
+	</form>
+	<br>
+{% endblock %}

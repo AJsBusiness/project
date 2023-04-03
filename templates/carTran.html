@@ -1,0 +1,18 @@
+{% extends "set.html" %}
+
+{% set active_page = "carTran" %}
+
+{% block title %}carTran{% endblock %}
+
+{% block content %}
+    <h1>Car Transsmison</h1>
+	<br><p>Please select a transmission type below</p>
+	<form action="/tran">
+		<select name="tran">
+		{{ options }}
+		</select>
+	<br><br>
+		<input type="submit">
+	</form>
+	<br>
+{% endblock %}
